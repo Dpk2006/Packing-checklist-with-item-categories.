@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Korcy;
+    src: url(fonts/korcy/Korcy.ttf);
+}
+
+@font-face {
+    font-family: Churek;
+    src: url(fonts/churek/Churek.ttf);
+}
+
+.opacityZero {
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+.opacityOne {
+        transition: all .5s ease;
+    opacity: 1;
+}
+
+.heightZero {
+    height: 0vh;
+}
+.displayNone{
+    display: none;
+}
+.displayBlock{
+    display: block;
+}
+
+
+/* First */
+/* .main {
+    background-image: url("asests/room2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* From https://css.glass */
+    /* background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px); 
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.glass {
+    transition: height 1s cubic-bezier(1, 0.05, 0, 0.66);
+    width: 90%;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.6px);
+    -webkit-backdrop-filter: blur(4.6px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  */
+    color: white;
+    font-size: 24px;
+}
+
+.insideGlass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 0 0;
+}
+
+.headings {
+    color: #69665d;
+}
+
+.mainHeading {
+    font-family: Korcy;
+    margin-top: 40px;
+    font-size: 60px;
+}
+
+.lowerHeading {
+    font-family: churek;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tripName {
+    padding: 150px 0 0 0;
+}
+
+#tripName {
+    border: none;
+    border-bottom: 2px solid #69665d;
+    width: 500px;
+    background: none;
+    font-size: 25px;
+    font-family: Churek;
+    padding: 10px;
+    color: #69665d;
+}
+
+#tripName:focus {
+    outline: none;
+    caret-color: #69665d;
+}
+
+/* First End */
+
+
+
+
+
+

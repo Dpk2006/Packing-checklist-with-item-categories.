@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        .main {
+            height: 100vh;
+            width: 100%;
+            background-image: url("asests/room2.png");
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            /* 
+               From https://css.glass 
+               background: rgba(255, 255, 255, 0.1);
+               border-radius: 16px;
+               box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+               backdrop-filter: blur(4.6px);
+               -webkit-backdrop-filter: blur(4.6px); 
+            */
+        }
+
+        .insideMain {
+            /* display: flex; */
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .swiper {
+            width: 360px;
+            height: 550px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(4.6px);
+            -webkit-backdrop-filter: blur(4.6px);
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            color: #6d6962;
+            font-size: 20px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .items {
+            margin-top: 20px;
+            width: 70%;
+        }
+
+        #insideItems {
+            display: flex;
+            padding: 10px 0 10px 0;
+            justify-content: space-between;
+
+        }
+
+        #submitBtn {
+            margin-top: 20px;
+            border: none;
+            width: 140px;
+            height: 40px;
+            font-size: 30px;
+            font-family: 'Churek';
+            border-radius: 20px;
+            background: #cdc2ae
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+
+
+
+
+
+        <div class="glass">
+            <div class="insideGlass">
+                <div class="headings">
+                    <span class="mainHeading">DoltNoww</span>
+                    <div class="lowerHeading">-- lets plan big</div>
+                </div>
+                <div class="tripName">
+                    <input type="text" id="tripName" placeholder="-- Trip Name">
+                </div>
+                <div class="btn">
+                    <button id="btn">Lets Pack</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="insideMain displayNone opacityZero">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img width="48" height="48" src="https://img.icons8.com/parakeet/48/documents.png"
+                            alt="documents" />
+                        <div class="items">
+                            <div id="insideItems">
+                                <div class="text">ID proof</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Tickets (Train / Flight / Bus)</div><input type="checkbox" name=""
+                                    id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Hotel booking confirmation </div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Cash + ATM Card / Credit Card</div><input type="checkbox" name=""
+                                    id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Emergency contact list</div><input type="checkbox" name="" id="">
+                            </div>
+                        </div>
+                        <img src="bag.png" alt="" style="width: 142px; transform: rotate(17deg); margin: 29px 0 0 0;">
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="48" height="48" src="https://img.icons8.com/parakeet/48/clothes.png"
+                            alt="clothes" />
+                        <div class="items">
+                            <div id="insideItems">
+                                <div class="text">T-shirts / Shirts</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Jeans / Pants / Shorts</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Undergarments </div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Nightwear</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Jacket / Sweater</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Raincoat / Umbrella </div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Cap / Hat / Sunglasses</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text"> chappal/Shoes </div><input type="checkbox" name="" id="">
+                            </div>
+                        </div>
+                        <img width="100" height="100" src="https://img.icons8.com/ios/100/train.png" alt="train" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="48" height="48" src="https://img.icons8.com/parakeet/48/toilet-paper.png"
+                            alt="Toiletries" />
+                        <div class="items">
+                            <div id="insideItems">
+                                <div class="text">Toothbrush & Toothpaste</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Face wash / Soap</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Shampoo / Conditioner</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Towel / Hand towel</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Deodorant / Perfume</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Comb / Hairbrush </div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Sunscreen / Moisturizer</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Shaving kit</div><input type="checkbox" name="" id="">
+                            </div>
+                        </div>
+                        <img width="50" height="50" src="https://img.icons8.com/wired/50/airplane-mode-on.png"
+                            alt="airplane" style="margin-top: 30px;" />
+
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="48" height="48" src="https://img.icons8.com/parakeet/48/multiple-devices.png"
+                            alt="Electronics item" />
+                        <div class="items">
+                            <div id="insideItems">
+                                <div class="text">Mobile + Charger</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Power bank</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Earphones / Headphones </div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Camera (Optional) </div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Travel adapter</div><input type="checkbox" name="" id="">
+                            </div>
+                        </div>
+                        <img width="100" height="100" src="https://img.icons8.com/ios/100/cruise-ship.png"
+                            alt="cruise-ship" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="48" height="48" src="https://img.icons8.com/parakeet/48/rice-bowl.png" alt="Food" />
+                        <div class="items">
+                            <div id="insideItems">
+                                <div class="text">Dry snacks (chips, biscuits, namkeen)</div><input type="checkbox"
+                                    name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Water bottle</div><input type="checkbox" name="" id="">
+                            </div>
+                        </div>
+                        <img width="100" height="100" src="https://img.icons8.com/dotty/100/motorcycle.png"
+                            alt="motorcycle" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="48" height="48"
+                            src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/64/external-medicines-health-and-medical-flatart-icons-lineal-color-flatarticons-3.png"
+                            alt="medicines" />
+                        <div class="items">
+                            <div id="insideItems">
+                                <div class="text">Sar dard / pet dard / allergy ki medicine</div><input type="checkbox"
+                                    name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Band-aid</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Personal medicines </div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">ORS sachets / pain relief spray</div><input type="checkbox" name=""
+                                    id="">
+                            </div>
+
+                        </div>
+                        <img width="100" height="100" src="https://img.icons8.com/ios/100/suv-2.png" alt="suv-2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img width="48" height="48" src="https://img.icons8.com/parakeet/48/more.png" alt="more" />
+                        <div class="items">
+                            <div id="insideItems">
+                                <div class="text">Small Backpack / Day bag </div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Small Backpack / Day bag </div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Plastic bags / Laundry bag </div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Safety pins / Sewing kit</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Pen & notepad</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text"> Wet wipes / Tissues / Sanitizer </div><input type="checkbox" name=""
+                                    id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Eye mask / Neck pillow</div><input type="checkbox" name="" id="">
+                            </div>
+                            <div id="insideItems">
+                                <div class="text">Lighter / matchbox </div><input type="checkbox" name="" id="">
+                            </div>
+                        </div>
+                        <img src="bag.png" alt="" style="width: 142px; transform: rotate(17deg); margin: 29px 0 0 0;">
+                    </div>
+                    <!-- <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div> -->
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+            <button id="submitBtn">Done</button>
+        </div>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+        </script>
+</body>
+
+</html>
